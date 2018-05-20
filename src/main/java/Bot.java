@@ -82,9 +82,6 @@ public class Bot extends TelegramLongPollingBot {
                     sendMsg(message, "Верный ты даешь ответ!" + "\n" + "Хочешь узнать погоду?)");
                     ifCount++;
                     break;
-                /*default:
-                    //sendMsg(message, Weather.getWeather(message.getText(), model));
-                    sendMsg(message, "Да я знаю, что твоя розочка уже давно вскрыта!:)");*/
             }
         } else if (message != null && message.hasText() && ifCount == 2){
             switch (message.getText()){
